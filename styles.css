@@ -69,3 +69,148 @@ button:disabled {
 strong {
   color: #222;
 }
+
+/* ======================================== */
+/* TO-DO LIST / CALCULATION HISTORY */
+/* ======================================== */
+
+.todo-section {
+      margin-top: 30px;
+          padding: 25px;
+              background: white;
+                  border-radius: 8px;
+                      box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+                      }
+
+                      .todo-section h2 {
+                            color: #333;
+                                margin-bottom: 20px;
+                                    font-size: 1.5em;
+                                        border-bottom: 3px solid #4CAF50;
+                                            padding-bottom: 10px;
+                                            }
+
+                                            .todo-actions {
+                                                  display: flex;
+                                                      gap: 10px;
+                                                          margin: 15px 0 20px 0;
+                                                              flex-wrap: wrap;
+                                                              }
+
+                                                              .todo-actions button {
+                                                                    padding: 10px 20px;
+                                                                        border: none;
+                                                                            border-radius: 5px;
+                                                                                cursor: pointer;
+                                                                                    font-size: 14px;
+                                                                                        font-weight: 500;
+                                                                                            transition: all 0.3s ease;
+
+                                                                                            }
+
+                                                                                            #print-all {
+                                                                                                  background-color: #2196F3;
+                                                                                                  }
+
+                                                                                                  #print-all:hover {
+                                                                                                        background-color: #1976D2;
+                                                                                                            transform: translateY(-2px);
+                                                                                                                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                                                                                                                }
+
+                                                                                                                #share-all {
+                                                                                                                      background-color: #FF9800;
+                                                                                                                      }
+
+                                                                                                                      #share-all:hover {
+                                                                                                                            background-color: #F57C00;
+                                                                                                                                transform: translateY(-2px);
+                                                                                                                                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                                                                                                                                    }
+
+                                                                                                                                    #clear-all {
+                                                                                                                                          background-color: #f44336;
+                                                                                                                                          }
+
+                                                                                                                                          #clear-all:hover {
+                                                                                                                                                background-color: #d32f2f;
+                                                                                                                                                    transform: translateY(-2px);
+                                                                                                                                                        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                                                                                                                                                        }
+
+                                                                                                                                                        .todo-list {
+
+
+                                                                                                                                                              margin: 0;
+                                                                                                                                                              }
+
+                                                                                                                                                              .todo-item {
+                                                                                                                                                                    background: #f9f9f9;
+                                                                                                                                                                        padding: 15px;
+                                                                                                                                                                            margin: 12px 0;
+                                                                                                                                                                                border-radius: 6px;
+                                                                                                                                                                                    border-left: 4px solid #4CAF50;
+                                                                                                                                                                                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                                                                                                                                                                                            transition: all 0.3s ease;
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            .todo-item:hover {
+                                                                                                                                                                                                  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                                                                                                                                                                                                      transform: translateY(-2px);
+                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                      .todo-header {
+
+                                                                                                                                                                                                            justify-content: space-between;
+                                                                                                                                                                                                                align-items: center;
+                                                                                                                                                                                                                    margin-bottom: 10px;
+                                                                                                                                                                                                                        flex-wrap: wrap;
+                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                        .todo-header strong {
+                                                                                                                                                                                                                              color: #4CAF50;
+                                                                                                                                                                                                                                  font-size: 16px;
+                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                  .todo-date {
+                                                                                                                                                                                                                                        color: #666;
+                                                                                                                                                                                                                                            font-size: 12px;
+                                                                                                                                                                                                                                                font-style: italic;
+                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                .todo-results {
+                                                                                                                                                                                                                                                      margin: 10px 0;
+                                                                                                                                                                                                                                                          padding: 10px;
+                                                                                                                                                                                                                                                              background: white;
+                                                                                                                                                                                                                                                                  border-radius: 4px;
+                                                                                                                                                                                                                                                                      font-size: 14px;
+                                                                                                                                                                                                                                                                          line-height: 1.6;
+                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                          .todo-actions-item {
+                                                                                                                                                                                                                                                                                margin-top: 10px;
+                                                                                                                                                                                                                                                                                    text-align: right;
+                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                    .btn-delete {
+                                                                                                                                                                                                                                                                                          background-color: #f44336;
+                                                                                                                                                                                                                                                                                              color: white;
+                                                                                                                                                                                                                                                                                                  border: none;
+                                                                                                                                                                                                                                                                                                      padding: 6px 12px;
+                                                                                                                                                                                                                                                                                                          border-radius: 4px;
+                                                                                                                                                                                                                                                                                                              cursor: pointer;
+                                                                                                                                                                                                                                                                                                                  font-size: 13px;
+                                                                                                                                                                                                                                                                                                                      transition: all 0.2s ease;
+                                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                                      .btn-delete:hover {
+                                                                                                                                                                                                                                                                                                                            background-color: #d32f2f;
+                                                                                                                                                                                                                                                                                                                                transform: scale(1.05);
+                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                .empty-message {
+                                                                                                                                                                                                                                                                                                                                      text-align: center;
+                                                                                                                                                                                                                                                                                                                                          color: #999;
+                                                                                                                                                                                                                                                                                                                                              padding: 30px;
+                                                                                                                                                                                                                                                                                                                                                  font-style: italic;
+                                                                                                                                                                                                                                                                                                                                                  }
