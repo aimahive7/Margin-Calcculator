@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Item Margin Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Item Margin Calculator</h1>
+    <div class="form-group">
+      <label for="item-name">Item Name</label>
+      <input type="text" id="item-name" placeholder="Enter item name">
+    </div>
+
+    <div class="form-group">
+      <label>PTR Rate (₹)</label>
+      <input type="number" id="ptr" min="0" step="any">
+    </div>
+    <div class="form-group">
+      <label>GST Rate (%)</label>
+      <select id="gst">
+        <option value="0">0%</option>
+        <option value="5" selected>5%</option>
+        <option value="12">12%</option>
+        <option value="18">18%</option>
+        <option value="28">28%</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="number" id="gst-other" min="0" step="any" placeholder="Enter GST %" style="display:none;">
+    </div>
+    
+    <div class="form-group">
+      <label>Purchase Discount</label>
+      <input type="number" id="pur-discount-val" min="0" step="any" placeholder="Discount value">
+      <select id="pur-discount-type">
+        <option value="amount">₹ Amount</option>
+        <option value="percentage" selected>% Percentage</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Sale Discount</label>
+      <input type="number" id="sale-discount-val" min="0" step="any" placeholder="Discount value">
+      <select id="sale-discount-type">
+        <option value="amount" selected>₹ Amount</option>
+        <option value="percentage">% Percentage</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>MRP (₹)</label>
+      <input type="number" id="sale-rate" min="0" step="any" placeholder="MRP or Sale Rate">
+    </div>
+    <div class="button-group">
+      <button id="calculate">Calculate</button>
+      <button id="reset">Reset</button>
+      <button id="share" disabled>Share</button>
+      <!-- <button id="share">Share</button> -->
+    </div>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
